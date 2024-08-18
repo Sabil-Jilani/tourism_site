@@ -1,0 +1,61 @@
+.footer{
+    
+    padding: 3rem 2rem;
+    background-color: #333;
+    &-logo-box{margin: 2.6rem 0;
+text-align: center;
+.footer_logo{width: 11%;}
+    }
+    .footer-text{border-top:3px solid #eee ;
+        margin: 2rem;
+        width: 89%;
+   }
+    .nafigation{border-top:3px solid #eee ;
+        margin: 2rem 0;
+        width: 94%;
+        .footer-list{  
+            list-style-type: none;
+          
+        }
+    }
+    .list-link{
+        color: $color-white;
+         padding: .4rem 1rem;
+         font-size: 1.1rem;
+          text-decoration: none; 
+          transition: all .3s; 
+          &:hover{ color: $Light-green;}
+     }
+    .list-item{
+        transition: all .3s; 
+        &:hover{
+          box-shadow: .3rem .8rem .5rem rgba($color-black,.6);
+          color: $Light-green;
+          transform:scale(1.095) skewY(4deg);
+      }
+          display: inline-block;
+         
+      }
+}
+// <footer class="footer">
+//     <div class="footer-logo-box">
+//         <img src="./img/logo-green-small-2x.png" alt="ssmsd" class="footer_logo">
+//     </div>
+//     <div class="row">
+//         <div class="col-1-of-2">
+//             <div class="nafigation">
+//                 <ul class="footer-list">
+//                     <li class="list-item">about</li>
+//                     <li class="list-item">about</li>
+//                     <li class="list-item">about</li>
+//                     <li class="list-item">about</li>
+//                     <li class="list-item">about</li>
+//                     <li class="list-item">about</li>
+//                 </ul>
+//             </div>
+//         </div>
+//         <div class="col-1-of-2">
+//             <div class="footer-text">Lorem ipsum dolor sit, amet consectetur <a>adipisicing</a> elit. Voluptate voluptas minus maiores <a>consequuntur </a>tempore nam distinctio corporis quidem, repellat suscipit accusantium. Recusandae repellendus explicabo provident corporis vel. Vel, asperiores saepe.</div>
+//         </div>
+//     </div>
+// </footer>

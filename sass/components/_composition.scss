@@ -1,0 +1,68 @@
+.button-2nd{
+  display: inline-block;
+  margin:0 0 0 5.5rem;
+  padding: 6px 5px;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 1.08rem;
+  font-weight: 700;
+  transition: all .3s;
+    &:not(:hover){   
+     
+       border-bottom:3px solid $Dark-green;
+  background-image: linear-gradient(to left,$Dark-green,$Light-green);
+    -webkit-background-clip:text;
+    color: transparent;
+    }
+    &:hover{
+      transform:translateY(-3px);
+      box-shadow: - .5rem .3rem .8rem $color-black;
+      background-color:$Dark-green;
+      color:$color-white;
+  
+    }
+
+    &:active{
+      box-shadow:- .2rem .1rem .3rem rgba($color-black, 0.699);
+      transform: translate(0,-1px);
+  }
+}
+
+
+.container{
+  height: 21rem; 
+    position: relative;
+&:hover &-pic:not(:hover){
+    transform: scale(.95);
+}
+  &-pic{  
+    width:55%;
+  transition: all .2s;
+outline-offset:1rem;
+box-shadow: 0 1.3rem 4rem rgba($color-black,1);
+
+&:hover{
+        transform: scale(1.09) translateY(-20px);
+        outline: .8rem solid $Dark-green;
+        z-index: 5;
+        box-shadow: 0 1.3rem 4rem rgba($color-gray-dark,.4);
+    }}
+  .photo-1{
+    position: absolute; 
+    top:-.4rem ;
+    left:0;
+    
+  } .photo-2{
+    position: absolute; 
+    top:1 ;
+    left:9rem;
+ 
+  } .photo-3{
+    position: absolute; 
+    top:5rem ;
+    left:4rem;
+
+  }
+  }
+
+ 

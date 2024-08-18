@@ -1,0 +1,90 @@
+.section-book{
+    background-image: linear-gradient(to right bottom,$Dark-green,$Light-green);
+    padding: 5rem 3rem;
+    .book{
+        box-shadow: 1rem 2rem 4rem rgba($color-black,.8);
+        margin: 1px auto;
+        width: 73%;
+        background-size: cover;
+        background-image:linear-gradient(105deg,rgba($color-white,.9) 56%,transparent 50%),url(../img/nat-10.jpg);
+    .form{
+        width: 55%;
+        padding:2rem 0 2rem 3rem;
+        .group{
+
+            .input:placeholder-shown + label{
+                display: inline-block;
+                transform: translateY(-40px);
+                opacity: 0;
+            } 
+
+
+            label{      transform: translateY(0px);
+                opacity: 1;
+                margin-left: 0.9rem;
+                display: inline-block;
+                transition: all .3s;}
+            .input{
+                transition: all .3s;
+                margin: .8rem 0 0.3rem;
+                color: inherit;
+                width: 82%;
+                font-style: inherit;
+                padding: 0.7rem 0.8rem;
+                margin-right: 3rem;
+                font-size: 1.3rem;
+                outline: none;
+                border: none;
+                border-bottom: 3px solid transparent;
+               
+                &:valid:focus{
+                    border-bottom: 3px solid $Dark-green;
+                } &:focus{
+                    border-bottom: 3px solid orangered;
+                }
+            }
+
+        }
+    }
+    }
+}
+.group_radio{
+    margin-top: 1rem;
+    padding-top: 0.18rem;
+    position: relative;
+    display: inline-block;
+   width: 50%;
+   .radio{
+    display: none;
+   }
+   input:checked ~ span::after{
+    background-color: $Dark-green;
+   }
+    span{
+        content: "";
+        height: 1.7rem;
+        width: 1.7rem;
+        border: 3px solid $Dark-green;
+    border-radius: 100%;
+        position: absolute;
+        top:0.3rem;
+        left:0.1rem;
+        &::after{
+            content: "";
+            height: .9rem;
+            width: .9rem;
+    
+        border-radius: 100%;
+            position: absolute;
+            top:50%;
+            left:50%;
+            transform: translate(-50%,-50%);
+        }
+      
+    }
+    label{
+        font-size: larger;
+        padding-left: 2.5rem;
+     
+    }
+}

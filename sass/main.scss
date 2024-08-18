@@ -1,0 +1,25 @@
+
+@import "abstract/variables";     //at first
+@import "base/animations";
+@import "base/base";
+@import "base/typography";
+@import "base/utilities";
+@import "abstract/functions";
+@import "abstract/mixins";
+@import "layouts/header.scss";
+@import "components/button.scss";
+@import "layouts/float-grid.scss";  
+@import "pages/homepage.scss";  
+@import "components/composition";  
+@import "components/features.scss";  
+@import "components/pricing";  
+@import "components/reviews";  
+@import "components/_bg-video.scss";  
+@import "components/form";  
+@import "components/footer";  
+@import "components/navigation";  
+@import "components/popup";  
+
+
+
+

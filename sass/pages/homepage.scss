@@ -1,0 +1,15 @@
+.section-about{
+  background-color:$color-gray-dark-1;
+padding:10rem 0 8rem;
+margin-top:-10vh;
+
+}
+
+.secondary-header{
+  display: inline-block;
+  transition: all .2s;
+  &:hover{
+    transform:skewX(15deg) skewY(2deg) scale(1.05) ;
+  }
+}
+

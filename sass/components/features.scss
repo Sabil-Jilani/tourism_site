@@ -1,0 +1,30 @@
+.features{   
+  margin-top: -3rem; 
+ background-image:linear-gradient(to right bottom,rgba($Dark-green,.8),rgba($Light-green,.8)),url(../img/nat-4.jpg);
+padding: 0 2.7rem 4rem;
+transform: skewY(-4deg);
+&>*{
+  transform: skewY(4deg);
+}
+ .feature-box{
+
+padding:1.6rem 1rem;
+  margin: 6rem 0;
+  background-color: aliceblue;
+ transition:all .3s ;
+  &:hover{
+    border-radius: 20px;
+    box-shadow: 2rem 3.5rem 3.2rem $color-black;
+    transform: translateY(-.5rem) scale(1.07);
+  }
+
+  .bi{ background-image: linear-gradient(to left,$Dark-green,$Light-green);
+    -webkit-background-clip:text;
+    color: transparent;
+    font-size: 3.5rem;
+    padding-bottom: 5px;
+  }
+
+ }
+
+}

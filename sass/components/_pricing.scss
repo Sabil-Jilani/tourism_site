@@ -1,0 +1,140 @@
+
+.pricing{
+  background-color:$color-gray-dark-1;
+    text-align: center;
+padding:10rem 4rem 6rem ;
+margin-top: -3rem;
+.card{
+    color:white;
+    height: 25rem;
+    position: relative;
+   
+    &__side{ transition: transform .6s;
+         width: 100%;
+        height: 25rem;
+        backface-visibility: hidden;
+        border-radius: 5px;
+        box-shadow: 1rem 3rem 4rem $color-black;
+        color: $color-gray-dark;
+    }
+    .up{
+        
+        position: absolute;
+        top:0;
+        left:0;
+        background-color: $color-white;
+
+  } .dwon{
+  position: absolute;
+  top:0;
+  left:0;
+  padding: 30px 0;
+  text-transform: uppercase;
+color: white;
+  h5{
+    margin-top: 4.5rem ;
+display: inline-block;
+font-size: 1rem;
+font-weight: 600;
+  }
+  h2{margin-top:1.6rem;
+font-size: 2.6rem;
+font-weight: 300;
+  }
+  a{
+    position: relative;
+    padding: 5px;
+    display: inline-block;
+    height: 2.7rem;
+    border-radius: 100px;
+    width: 60%;
+    font-weight: 500;
+   color:rgba($color-dark-blue,1) ;
+    background-color:white ;
+    margin-top:2.3rem;
+text-decoration: none;
+font-size: 1.25rem;
+
+&:hover {
+    transform: translateY(-2px);
+    box-shadow:0 .8rem 2rem $color-black;
+}&:active{
+    box-shadow:0 2px .7rem $color-black;
+    transform: translateY(-1px);
+}
+&::after{z-index: -1;
+    background-color: $color-white;
+    content: "";
+    position: absolute;
+    top:0;
+    left:0;
+    height: 100%;
+    width: 100%;
+    border-radius: 100px;
+    display: inline-block;
+    transition: all .4s;
+    
+}
+&:hover::after{
+   transform: scale(1.4,1.2);
+opacity: 0;}
+
+
+
+  }
+   transform: rotateY(180deg);
+   &-1{background-image: linear-gradient(to right bottom,rgba($color-dark-yw,1),rgba($color-light-yw,1))};
+   &-2{background-image: linear-gradient(to right bottom,rgba($Dark-green,1),rgba($Light-green,1))};
+   &-3{background-image: linear-gradient(to right bottom,rgba($color-dark-blue,1),rgba($color-light-blue,1))};
+}
+&:hover .up{
+    transform: rotateY(180deg);
+   }
+   &:hover .dwon{
+    transform: rotateY(0deg);
+   }
+}
+}
+
+// CARD-EDITIG*******************//
+
+.bg__img{ 
+    position: relative;
+      clip-path: polygon(0% 0%,100% 0%,100% 80%,0% 100%);
+    width:100%;
+    height:45%;
+    background-size: cover;
+&-1{background-image: linear-gradient(to right,rgba($color-dark-yw,.7),rgba($color-light-yw,.7)),url(../img/nat-4.jpg);
+};
+&-2{background-image: linear-gradient(to right,rgba($Dark-green,.7),rgba($Light-green,.7)),url(../img/nat-5.jpg);
+}
+;&-3{background-image: linear-gradient(to right,rgba($color-dark-blue,.7),rgba($color-light-blue,.7)),url(../img/nat-6.jpg);
+}; 
+}
+.list{
+  margin: 34px auto 2px;
+    height: 50%;
+list-style-type: none;
+width: 70%;
+li{margin-top: 8px;
+
+  &:not(:last-child){border-bottom: 2px solid #eee};
+}
+}
+
+.heading{
+    margin:0 10px 0 0 ;
+    h3{text-align: right;}
+    position: absolute;
+    top:7.5rem;
+    right:0;
+  width: 65%;
+span{-webkit-box-decoration-break: clone;
+  text-transform: uppercase;
+  color: $color-white;
+  font-weight: 300;
+  font-size: larger;
+  padding: 6px 7px 6px 10px;
+    background-image: linear-gradient(to right,rgba($color-light-yw,1),rgba($color-dark-yw,1));
+}
+}
